@@ -1,0 +1,31 @@
+=> Proses order makanan/minuman via online
+
+Start
+  READ AND WRITE "id_user" with string
+  READ AND WRITE "memesan" with true
+  READ AND WRITE "menu" with string
+  READ AND WRITE "harga_makanan" with number
+  READ AND WRITE "keranjang_pesanan" with empty list
+  READ AND WRITE "alamat" with string
+  READ AND WRITE "harga_total" with number
+
+  READ "id_user"
+  READ "menu"
+    IF "menu" equals 1 THEN
+    READ "menu"
+    IF "menu" equals 1 THEN
+      SET "harga_makanan" to number
+  ELSE IF "menu" equals >1 THEN 
+    SET "harga_makanan" to number
+  DISPLAY "Pesanan telah dipilih"
+  END IF
+  STORE "keranjang_pesanan" with "data user"
+    WHILE "memesan"
+    DO "keranjang_pesanan.push" (item)
+    END WHILE
+    SET "harga_total" to "harga_makanan"
+    DISPLAY "Total pesanan anda RP" + "harga_total"
+    DISPLAY "Masukkan alamat"
+    READ "alamat"
+    DISPLAY "Terimakasih  atas pesanannya"
+END
